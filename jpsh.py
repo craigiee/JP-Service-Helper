@@ -17,6 +17,7 @@ TOKEN = 'NTM4MTI3OTA0NTgwODI5MjA0.DyvSSQ.Fys8kK9amF5xNQwJL9elSwgWJpo'
 client = Bot(command_prefix=BOT_PREFIX)
 commands = discord.ext.commands
 
+api = str(os.environ.get('RIOT_KEY'))
 
 # events are something that happen with the bot
 @client.event
@@ -113,4 +114,4 @@ async def list_servers():
         await asyncio.sleep(600)  # 600 is 10 minutes in seconds, change this to whatever you want but 600 recommended
 
 client.loop.create_task(list_servers())
-client.run(os.getenv((TOKEN))
+client.run(str(os.environ.get(TOKEN)))
