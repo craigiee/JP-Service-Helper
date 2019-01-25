@@ -1,1 +1,1 @@
-worker: python yes.py 
+worker: python3 jpsh.py
