@@ -6,6 +6,7 @@ import aiohttp
 import json
 from discord.ext.commands import Bot
 import chalk
+import os
 
 
 # main things
@@ -112,4 +113,4 @@ async def list_servers():
         await asyncio.sleep(600)  # 600 is 10 minutes in seconds, change this to whatever you want but 600 recommended
 
 client.loop.create_task(list_servers())
-client.run(TOKEN)
+client.run(os.getenv((TOKEN))
