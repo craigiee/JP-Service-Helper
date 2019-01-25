@@ -1,1 +1,1 @@
-worker: python3 jpsh.py
+worker: python jpsh.py
