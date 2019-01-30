@@ -1,7 +1,0 @@
-discord
-random
-asyncio
-aiohttp
-json
-from discord.ext.commands import Bot
-chalk
